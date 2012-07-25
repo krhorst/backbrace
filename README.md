@@ -2,6 +2,8 @@
 
 Project ramp up generator gem for Backbone.js and Crossroads.js
 
+(Requires Rails 3.1 or higher in order to use the Asset Pipeline)
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -18,6 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
+    $ rails generate backbrace:install
 
 ## Contributing
 
