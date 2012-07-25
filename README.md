@@ -1,12 +1,12 @@
 # Backbrace
 
-TODO: Write a gem description
+Project ramp up generator gem for Backbone.js and Crossroads.js
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'backbrace'
+    gem 'backbrace', :git => 'git://github.com/krhorst/backbrace.git'
 
 And then execute:
 
@@ -18,7 +18,6 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
 
 ## Contributing
 
