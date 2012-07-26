@@ -16,7 +16,7 @@ module Backbrace
 
       def inject_backbone
         inject_into_file "app/assets/javascripts/application.js", :before => "//= require_tree" do
-          "//= require underscore\n//= require backbone\n//=require signals\n//=require crossroads\n//= require app/app.js\n//= require app/app.models\n//= require app/app.components\n//= require app/app.views\n//= require app/app.helpers\n//= require_tree ./app/models\n//= require_tree ./app/models\n//= require_tree ./app/components\n//= require_tree ./app/views\n//= require app/app.router\n//= require init"
+          "//= require underscore\n//= require backbone\n//=require signals\n//=require crossroads\n//= require app/app.js\n//= require app/app.models\n//= require app/app.components\n//= require app/app.views\n//= require app/app.helpers\n//= require_tree ./app/models\n//= require_tree ./app/models\n//= require_tree ./app/components\n//= require_tree ./app/views\n//= require app/app.router\n//= require init\n"
         end
       end
 
@@ -38,4 +38,12 @@ module Backbrace
 
     end
   end
+
+    module Rails
+      class Engine < ::Rails::Engine
+      end
+    end
+
+
 end
+
